@@ -11,7 +11,7 @@ public class testpage {
 
 	@RequestMapping("/")
 	public String index() {
-		return "Hello World! hj my name";
+		return "Hello World! hj my name@";
 	}
 
 	public static void main(String[] args) {
