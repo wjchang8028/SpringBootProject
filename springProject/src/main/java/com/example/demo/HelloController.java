@@ -12,6 +12,6 @@ public class HelloController {
 	public String hello(@RequestParam(value = "name", defaultValue = "World", required = true) String name,
 			Model model) {
 		model.addAttribute("name", name);
-		return "hello2"; //jspÆÄÀÏ·Î ÀÌµ¿
+		return "hello2"; //jspë¡œ ì´ì–´ì§
 	}
 }
