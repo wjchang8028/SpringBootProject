@@ -6,9 +6,14 @@ import org.springframework.stereotype.Service;
 @Service
 public class testService {
 
-	@Autowired
-	testMapper testmapper;
+	@Autowired(required = false)
+	private testMapper testmapper;
 
-//	public testService();
+	String test() {
+		String a = testmapper.getinfo();
+		System.out.println(a);
+
+		return a;
+	}
 
 }
