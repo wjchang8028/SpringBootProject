@@ -14,8 +14,11 @@ public class testController {
 	testService testservice;
 
 	@RequestMapping(value = "/main.do")
-	public String testMethod(String a,Model model) {
+	public String testMethod(Model model) {
+
+		String a = testservice.test();
 		System.out.println(a);
+
 		model.addAttribute("a", a);
 		return "main";
 	}

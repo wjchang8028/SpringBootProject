@@ -7,11 +7,10 @@ import org.springframework.stereotype.Service;
 public class testService {
 
 	@Autowired(required = false)
-	private testMapper testmapper;
+	public testMapper testmapper;
 
-	String test() {
+	public String test() {
 		String a = testmapper.getinfo();
-		System.out.println(a);
 
 		return a;
 	}
