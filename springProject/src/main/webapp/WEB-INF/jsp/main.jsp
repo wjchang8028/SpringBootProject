@@ -12,8 +12,8 @@
 	</h1>
 
 	<form>
-		<input type="text" name="id" placeholder="ID를 입력하세요. 전체설정">
-
+		<input type="text" name="id" id="id" placeholder="ID를 입력하세요.">
+		<button type="submit">전송</button>
 
 	</form>
 
