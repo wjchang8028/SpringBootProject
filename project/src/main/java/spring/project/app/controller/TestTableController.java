@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import spring.project.app.service.TestTableService;
 
 @Controller
+@RequestMapping("/")
 public class TestTableController {
 
 	@Resource
