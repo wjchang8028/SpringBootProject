@@ -21,6 +21,7 @@ public class TestTableController {
 		List<Map<String, Object>> AllList = testtableservice.SelectAllList();
 		System.out.println(AllList);
 		model.addAttribute("list", AllList);
+		System.out.println();
 
 		return "list";
 	}
