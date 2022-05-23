@@ -27,4 +27,10 @@ public class TestTableController {
 
 		return "list";
 	}
+
+	@RequestMapping(value = "/main.do")
+	public String main() {
+
+		return "testPage";
+	}
 }
