@@ -21,16 +21,6 @@ public class TestTableController {
 		List<Map<String, Object>> AllList = testtableservice.SelectAllList();
 		System.out.println(AllList);
 		model.addAttribute("list", AllList);
-		System.out.println();
-		System.out.println();
-		System.out.println();
-
 		return "list";
-	}
-
-	@RequestMapping(value = "/main.do")
-	public String main() {
-
-		return "testPage";
 	}
 }

@@ -6,7 +6,7 @@
 	namespace="spring.project.app.model.mapper.TestTableMapper">
 
 	<select id="SelectAllList" resultType="hashmap">
-		SELECT * FROM topic
+		SELECT * FROM testTable
 	</select>
 
 </mapper>
