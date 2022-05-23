@@ -22,6 +22,7 @@ public class TestTableController {
 		System.out.println(AllList);
 		model.addAttribute("list", AllList);
 		System.out.println();
+		System.out.println();
 
 		return "list";
 	}
