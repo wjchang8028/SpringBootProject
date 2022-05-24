@@ -22,7 +22,7 @@
 <script type="text/javascript">
 	$('#btn1').on('click', function() {
 		$.ajax({
-			url : 'validation.do',
+			url : '/validation.do',
 			type : 'POST',
 			data : $("#id").serialize(),
 			success : function(data) {
