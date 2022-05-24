@@ -18,7 +18,12 @@ public class TestTableController {
 	@Resource
 	private TestTableService testtableservice;
 
-	@RequestMapping(value = "/list.do")
+	@RequestMapping //기본 디폴트 페이지
+	public String mainPage() {
+		return "signin";
+	}
+
+	@RequestMapping(value = "/list.do") //리스트 출력 
 	public String view(Model model) throws Exception {
 		List<Map<String, Object>> AllList = testtableservice.SelectAllList();
 		System.out.println(AllList);
@@ -26,7 +31,7 @@ public class TestTableController {
 		return "list";
 	}
 
-	@RequestMapping(value = "/validation.do")
+	@RequestMapping(value = "/validation.do") // 아이디 사용가능한지 여부 확인 예정
 	@ResponseBody // json 형태로 반환
 	public String validateID(String userid) {
 		if (userid.isEmpty()) {
