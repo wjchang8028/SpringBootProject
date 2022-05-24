@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import spring.project.app.service.TestTableService;
 
@@ -26,8 +27,8 @@ public class TestTableController {
 	}
 
 	@RequestMapping(value = "/validation.do")
-	@Resource // json 형태로 반환
-	public String validateID(@RequestParam String userid) {
+	@ResponseBody // json 형태로 반환
+	public String validateID(String userid) {
 		if (userid.isEmpty()) {
 			return "아이디 값을 입력하세요.";
 		} else {
