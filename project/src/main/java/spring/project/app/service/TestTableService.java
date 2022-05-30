@@ -7,4 +7,6 @@ public interface TestTableService {
 
 // select * from Test_Table
 	public List<Map<String, Object>> SelectAllList() throws Exception;
+	
+	public Integer SelectCheckID(String userid) throws Exception;
 }
