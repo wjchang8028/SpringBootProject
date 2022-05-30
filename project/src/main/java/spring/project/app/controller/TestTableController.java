@@ -35,11 +35,14 @@ public class TestTableController {
 
 	@RequestMapping(value = "/validation.do") // 아이디 사용가능한지 여부 확인 예정
 	@ResponseBody // json 형태로 반환
-	public String validateID(String userid) {
-		if (userid.isEmpty()) {
-			return "아이디 값을 입력하세요.";
+	public String validateID(String userid) throws Exception {
+
+		int checkID = testtableservice.SelectCheckID(userid);
+
+		if (checkID != 0) {
+			return "이미 사용중인 아이디입니다.";
 		} else {
-			return userid + "는 사용가능합니다";
+			return userid + "는 사용가능한 아이디입니다";
 		}
 	}
 
