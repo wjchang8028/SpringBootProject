@@ -8,5 +8,9 @@
 	<select id="SelectAllList" resultType="hashmap">
 		SELECT * FROM testTable
 	</select>
+	
+	<select id="SelectCheckID" parameterType="java.lang.String" resultType="java.lang.Integer">
+		select count(*) from testTable where id=#{userid}
+	</select>
 
 </mapper>
