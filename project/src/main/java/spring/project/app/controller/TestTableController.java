@@ -46,8 +46,7 @@ public class TestTableController {
 		}
 	}
 
-	@RequestMapping(value = "/apitest.do")
-
+	@RequestMapping(value = "/apitest.do") //api컨트롤러 추가
 	public String page() {
 		return "apitest";
 	}
