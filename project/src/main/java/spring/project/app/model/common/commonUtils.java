@@ -18,7 +18,8 @@ public class commonUtils {
 	/**
 	 * API 커넥션 메소드
 	 * 
-	 * @param
+	 * @param data
+	 * @param reqUrl
 	 */
 	public String connectToServer(String data, String reqUrl) throws Exception {
 		HttpURLConnection conn = null;
