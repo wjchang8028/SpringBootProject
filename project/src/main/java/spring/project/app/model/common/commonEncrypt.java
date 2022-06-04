@@ -7,7 +7,7 @@ public class commonEncrypt {
 	/**
 	 * SHA암호화 생성 메소드
 	 * 
-	 * @param
+	 * @param text
 	 */
 	public String encrypt(String text) throws NoSuchAlgorithmException {
 		MessageDigest md = MessageDigest.getInstance("SHA-256");
@@ -34,7 +34,7 @@ public class commonEncrypt {
 	/**
 	 * SHA256 해시암호화 메소드
 	 * 
-	 * @param
+	 * @param strData
 	 */
 	public String encryptSHA256(String strData) {
 		String strOUTData = "";
