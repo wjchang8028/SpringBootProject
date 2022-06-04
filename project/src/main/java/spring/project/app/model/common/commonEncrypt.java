@@ -19,7 +19,7 @@ public class commonEncrypt {
 	/**
 	 * byte배열 -> 해시화 메소드
 	 * 
-	 * @param
+	 * @param bytes
 	 */
 
 	public String byteToHex(byte[] bytes) {
