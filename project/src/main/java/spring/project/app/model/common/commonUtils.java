@@ -13,6 +13,9 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
 
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+
 public class commonUtils {
 
 	/**
@@ -58,6 +61,36 @@ public class commonUtils {
 			e.printStackTrace();
 			return "ERROR";
 		}
+
+	}
+
+	/**
+	 * json -> hashmap 변환 메소드
+	 * 
+	 * @param str
+	 */
+
+	public HashMap jsonStringToHashMap(String str) throws Exception {
+		HashMap dataMap = new HashMap();
+		JSONParser parser = new JSONParser();
+
+		try {
+			Object obj = parser.parse(str);
+			JSONObject jsonObject = (JSONObject) obj;
+
+			Iterator<String> keyStr = jsonObject.keySet().iterator();
+			while (keyStr.hasNext()) {
+				String key = keyStr.next();
+				Object value = jsonObject.get(key);
+
+				dataMap.put(key, value);
+			}
+
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+
+		return dataMap;
 
 	}
 
