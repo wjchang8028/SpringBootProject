@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Map;
 import javax.annotation.Resource;
 
+import org.json.simple.parser.JSONParser;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -49,5 +50,12 @@ public class TestTableController {
 	@RequestMapping(value = "/apitest.do") //api컨트롤러 추가
 	public String page() {
 		return "apitest";
+	}
+	
+	@RequestMapping
+	public String jsonpage() {
+		JSONParser jparser = new JSONParser();//
+		
+		return "page";
 	}
 }
