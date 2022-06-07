@@ -93,5 +93,7 @@ public class commonUtils {
 		return dataMap;
 
 	}
+	
+	// httpclient vs httpurlconnection 추가예정
 
 }
