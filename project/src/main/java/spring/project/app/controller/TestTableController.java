@@ -54,7 +54,7 @@ public class TestTableController {
 	
 	@RequestMapping
 	public String jsonpage() {
-		JSONParser jparser = new JSONParser();//
+		JSONParser jparser = new JSONParser();// parser simple
 		
 		return "page";
 	}
