@@ -94,6 +94,7 @@ public class commonUtils {
 
 	}
 	
+	
 	// httpclient vs httpurlconnection 추가예정 restTemplate
 
 }
