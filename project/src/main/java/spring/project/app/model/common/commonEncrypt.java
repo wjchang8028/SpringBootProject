@@ -57,4 +57,17 @@ public class commonEncrypt {
 		System.out.println(strOUTData);
 		return strOUTData;
 	}
+	
+	/**
+	 * 검증데이터 생성 메소드
+	 * 
+	 * @param
+	 */
+
+	public String makeSignData(String plainstring) throws NoSuchAlgorithmException {
+
+	String validationData = encryptSHA256(plainstring);
+
+	return validationData;
+	}
 }
