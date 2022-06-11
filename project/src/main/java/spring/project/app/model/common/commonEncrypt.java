@@ -66,7 +66,7 @@ public class commonEncrypt {
 
 	public String makeSignData(String plainstring) throws NoSuchAlgorithmException {
 
-	String validationData = encryptSHA256(plainstring);
+	String validationData = encryptSHA256(plainstring); //sha256 해시암호화
 
 	return validationData;
 	}
