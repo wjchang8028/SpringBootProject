@@ -2,6 +2,8 @@ package spring.project.app.model.common;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class commonEncrypt {
 	/**
@@ -70,4 +72,17 @@ public class commonEncrypt {
 
 	return validationData;
 	}
+	
+	/**
+	 * DateTime 생성 메소드
+	 * 
+	 * @param
+	 */
+	public String makeDateTime() {
+	SimpleDateFormat yyyyMMddHHmmss = new SimpleDateFormat("yyyyMMddHHmmss");
+
+	return yyyyMMddHHmmss.format(new Date());
+
+	}
+
 }
