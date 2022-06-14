@@ -102,7 +102,7 @@ public class commonUtils {
 
 	}
 
-	// httpclient vs httpurlconnection 추가예정 restTemplate
+	// httpclient 확장 및 vs httpurlconnection 추가예정 restTemplate 
 
 	public String connectToServer2(String requestURL, String jsonMessage) { // httpClient 이용
 		HttpClient client = HttpClientBuilder.create().build(); // httpClient 생성
