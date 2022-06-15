@@ -123,7 +123,8 @@ public class commonUtils {
 			if (response.getStatusLine().getStatusCode() == 200) {
 				ResponseHandler<String> handler = new BasicResponseHandler();
 				String body = handler.handleResponse(response);
-				System.out.println(body);
+				System.out.println(body); 
+				
 			} else {
 				System.out.println("response error ! : " + response.getStatusLine().getStatusCode());
 			}
