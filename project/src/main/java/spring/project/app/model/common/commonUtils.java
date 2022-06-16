@@ -118,7 +118,7 @@ public class commonUtils {
 			postRequest.setEntity(new StringEntity(jsonMessage)); // json 메세지 입력
 			HttpResponse response = client.execute(postRequest);
 
-			// Response 출력
+			// Response 출력 json
 
 			if (response.getStatusLine().getStatusCode() == 200) {
 				ResponseHandler<String> handler = new BasicResponseHandler();
