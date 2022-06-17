@@ -38,7 +38,7 @@ public class TestTableController {
 	@ResponseBody // json 형태로 반환
 	public String validateID(String userid) throws Exception {
 
-		int checkID = testtableservice.SelectCheckID(userid);
+		int checkID = testtableservice.SelectCheckID(userid); //회원아이디 갯수가 1개이상이면 기가입 회원
 
 		if (checkID != 0) {
 			return "이미 사용중인 아이디입니다.";
