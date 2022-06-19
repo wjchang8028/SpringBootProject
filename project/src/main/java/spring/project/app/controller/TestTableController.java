@@ -1,5 +1,6 @@
 package spring.project.app.controller;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import javax.annotation.Resource;
@@ -54,7 +55,9 @@ public class TestTableController {
 	
 	@RequestMapping
 	public String jsonpage() {
-		JSONParser jparser = new JSONParser();// parser simple
+		JSONParser jparser = new JSONParser();// parser simple 
+		
+		ArrayList<String> alist = new ArrayList<>();
 		//json array 변환법
 		return "page";
 	}
