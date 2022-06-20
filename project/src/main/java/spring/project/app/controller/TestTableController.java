@@ -41,7 +41,7 @@ public class TestTableController {
 
 		int checkID = testtableservice.SelectCheckID(userid); //회원아이디 갯수가 1개이상이면 기가입 회원
 
-		if (checkID != 0) {
+		if (checkID != 0) { //카운트 갯수
 			return "이미 사용중인 아이디입니다.";
 		} else {
 			return userid + "는 사용가능한 아이디입니다";
