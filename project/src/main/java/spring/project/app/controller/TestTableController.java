@@ -1,10 +1,12 @@
 package spring.project.app.controller;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import javax.annotation.Resource;
 
+import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -58,6 +60,19 @@ public class TestTableController {
 		JSONParser jparser = new JSONParser();// parser simple 
 		
 		ArrayList<String> alist = new ArrayList<>();
+		HashMap<String, String> hmap = new HashMap<>();
+		
+		hmap.put("값", "값1");
+		hmap.put("값2","값2");
+		System.out.println(hmap.toString()); // map 형태 출력
+		
+		JSONObject jo = new JSONObject();
+		jo.putAll(hmap);
+		
+		System.out.println(jo); //json 형태 map 출력
+		
+		
+		
 		//json array 변환법
 		return "page";
 	}
