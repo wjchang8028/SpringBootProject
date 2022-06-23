@@ -67,9 +67,10 @@ public class TestTableController {
 		System.out.println(hmap.toString()); // map 형태 출력
 		
 		JSONObject jo = new JSONObject();
-		jo.putAll(hmap);
+		jo.putAll(hmap); //jsonObject에 map put
 		
 		System.out.println(jo); //json 형태 map 출력
+	
 		
 		
 		
