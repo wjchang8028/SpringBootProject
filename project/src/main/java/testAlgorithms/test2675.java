@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class test2675 {
 
 	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in);
+		Scanner scan = new Scanner(System.in); // 토큰
 		int TestCase = scan.nextInt(); // 케이스
 
 		while (TestCase > 0) {
