@@ -41,40 +41,43 @@ public class TestTableController {
 	@ResponseBody // json 형태로 반환
 	public String validateID(String userid) throws Exception {
 
-		int checkID = testtableservice.SelectCheckID(userid); //회원아이디 갯수가 1개이상이면 기가입 회원
+		int checkID = testtableservice.SelectCheckID(userid); // 회원아이디 갯수가 1개이상이면 기가입 회원
 
-		if (checkID != 0) { //카운트 갯수
+		if (checkID != 0) { // 카운트 갯수
 			return "이미 사용중인 아이디입니다.";
 		} else {
 			return userid + "는 사용가능한 아이디입니다";
 		}
 	}
 
-	@RequestMapping(value = "/apitest.do") //api컨트롤러 추가
+	@RequestMapping(value = "/signin.do")
+	public String SignInID() {
+		
+		return "signinpage";
+	}
+
+	@RequestMapping(value = "/apitest.do") // api컨트롤러 추가
 	public String page() {
 		return "apitest";
 	}
-	
+
 	@RequestMapping
 	public String jsonpage() {
-		JSONParser jparser = new JSONParser();// parser simple 
-		
+		JSONParser jparser = new JSONParser();// parser simple
+
 		ArrayList<String> alist = new ArrayList<>();
 		HashMap<String, String> hmap = new HashMap<>();
-		
+
 		hmap.put("값", "값1");
-		hmap.put("값2","값2");
+		hmap.put("값2", "값2");
 		System.out.println(hmap.toString()); // map 형태 출력
-		
+
 		JSONObject jo = new JSONObject();
-		jo.putAll(hmap); //jsonObject에 map put
-		
-		System.out.println(jo); //json 형태 map 출력
-	
-		
-		
-		
-		//json array 변환법
+		jo.putAll(hmap); // jsonObject에 map put
+
+		System.out.println(jo); // json 형태 map 출력
+
+		// json array 변환법
 		return "page";
 	}
 }
