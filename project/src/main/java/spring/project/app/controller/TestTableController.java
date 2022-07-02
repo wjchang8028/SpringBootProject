@@ -84,7 +84,7 @@ public class TestTableController {
 	
 	@GetMapping
 	public String getView() {
-		
+		//get으로 사이트 매핑 방법 찾기
 		return "getView";
 	}
 }
