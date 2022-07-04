@@ -12,5 +12,9 @@
 	<select id="SelectCheckID" parameterType="java.lang.String" resultType="java.lang.Integer">
 		select count(*) from testTable where id=#{userid}
 	</select>
+	
+	<insert id="">
+		
+	</insert>
 
 </mapper>
