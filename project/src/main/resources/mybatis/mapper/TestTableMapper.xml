@@ -13,7 +13,7 @@
 		select count(*) from testTable where id=#{userid}
 	</select>
 	
-	<insert id="">
+	<insert id="insertUser">
 		
 	</insert>
 
