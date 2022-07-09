@@ -27,12 +27,12 @@ import org.json.simple.parser.JSONParser;
 public class commonUtils {
 
 	/**
-	 * API 커넥션 메소드
+	 * API 커넥션 메소드(urlConnection)
 	 * 
 	 * @param data
 	 * @param reqUrl
 	 */
-	public String connectToServer(String data, String reqUrl) throws Exception {
+	public String connectToServer(String data, String reqUrl) throws Exception { 
 		HttpURLConnection conn = null;
 		BufferedReader resultReader = null;
 		PrintWriter pw = null;
