@@ -32,7 +32,7 @@ public class commonUtils {
 	 * @param data
 	 * @param reqUrl
 	 */
-	public String connectToServer(String data, String reqUrl) throws Exception { 
+	public String connectToServer(String data, String reqUrl) throws Exception {
 		HttpURLConnection conn = null;
 		BufferedReader resultReader = null;
 		PrintWriter pw = null;
@@ -72,6 +72,12 @@ public class commonUtils {
 
 	}
 
+	public String RestApiConnection() {
+		String result = "";
+
+		return result;
+	}
+
 	/**
 	 * json -> hashmap 변환 메소드
 	 * 
@@ -102,7 +108,7 @@ public class commonUtils {
 
 	}
 
-	// httpclient 확장 및 vs httpurlconnection 추가예정 restTemplate 
+	// httpclient 확장 및 vs httpurlconnection 추가예정 restTemplate
 
 	public String connectToServer2(String requestURL, String jsonMessage) { // httpClient 이용
 		HttpClient client = HttpClientBuilder.create().build(); // httpClient 생성
@@ -123,8 +129,8 @@ public class commonUtils {
 			if (response.getStatusLine().getStatusCode() == 200) {
 				ResponseHandler<String> handler = new BasicResponseHandler();
 				String body = handler.handleResponse(response);
-				System.out.println(body); 
-				
+				System.out.println(body);
+
 			} else {
 				System.out.println("response error ! : " + response.getStatusLine().getStatusCode());
 			}
