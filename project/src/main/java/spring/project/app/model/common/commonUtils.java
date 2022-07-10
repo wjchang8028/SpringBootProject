@@ -74,9 +74,15 @@ public class commonUtils {
 
 	public String RestApiConnection(String requestURL) {
 		String result = "";
-		
-		HttpClient hclient = HttpClientBuilder.create().build(); // HttpClient 생성
-		HttpPost postRequest = new HttpPost(requestURL); //요청 URL에 post 전송
+
+		try {
+			HttpClient hclient = HttpClientBuilder.create().build(); // HttpClient 생성
+			HttpPost postRequest = new HttpPost(requestURL); // 요청 URL에 post 전송
+			HttpResponse response = hclient.execute(postRequest); 
+
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
 
 		return result;
 	}
