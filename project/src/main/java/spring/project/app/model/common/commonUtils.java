@@ -74,6 +74,8 @@ public class commonUtils {
 
 	public String RestApiConnection() {
 		String result = "";
+		
+		HttpClient hclient = HttpClientBuilder.create().build(); // HttpClient 생성
 
 		return result;
 	}
