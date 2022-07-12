@@ -1,5 +1,9 @@
 package spring.project.app.controller;
 
+import java.util.HashMap;
+
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -7,8 +11,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class apiController {
 
 	@RequestMapping(value = "/callapi.do")
-	public String CallApi() {
+	public String CallApi(HttpServletRequest request) {
 
+		HashMap map = new HashMap();
+		
+		
 		return "";
 	}
 }
