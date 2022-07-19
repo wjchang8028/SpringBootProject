@@ -3,7 +3,7 @@ package testAlgorithms;
 public class prog_1 {
 
 	public long[] solution(int x, int n) {
-		long[] answer = new long[n];
+		long[] answer = new long[n]; //길이 처음부터 할당
 
 		long num = x;
 
