@@ -15,7 +15,13 @@ public class apiController {
 
 		HashMap map = new HashMap();
 		
+		
 		//apiinit 추가
+		
+		return "";
+	}
+	
+	public String apiinit() {
 		
 		return "";
 	}
