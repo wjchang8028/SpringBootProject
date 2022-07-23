@@ -15,7 +15,7 @@ public class prog_1 {
 		return answer;
 	}
 
-	public void start() {
+	public void start() { // 콘솔
 		solution(5, 3);
 	}
 
