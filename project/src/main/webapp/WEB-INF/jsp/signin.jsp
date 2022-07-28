@@ -14,6 +14,8 @@
 		<button type="button" id="btn1">아이디 확인</button>
 		<div id="result"></div>
 		<input type="text" name="userpw">
+		
+		<input type="text" name="signData">
 		<button type="submit">회원가입</button>
 	</form>
 
