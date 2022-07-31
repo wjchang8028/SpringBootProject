@@ -15,7 +15,6 @@
 		<div id="result"></div>
 		<input type="text" name="userpw">
 		
-		<input type="hidden" name="validation"> <!-- 회원가입 플래그 -->
 		
 		<input type="text" name="signData">
 		<button type="submit">회원가입</button>
