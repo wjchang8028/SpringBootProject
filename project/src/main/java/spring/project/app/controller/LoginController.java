@@ -33,7 +33,7 @@ public class LoginController {
 	@RequestMapping("validationPW.do")
 	@ResponseBody
 	public String checkPW(HttpServletRequest request) {
-
+		//todo commonutils 가져오기
 		commonUtils utils = new commonUtils();
 
 		HashMap paramMap = new HashMap();
