@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import spring.project.app.model.common.commonUtils;
 import spring.project.app.service.TestTableService;
 
 @RequestMapping
@@ -21,7 +22,7 @@ public class LoginController {
 	public String checkID(String userid) {
 		System.out.println("입력받은 값 : " + userid);
 
-		String checkid = testtableservice.selectCheckID(userid);
+		String checkid = testtableservice.selectCheckID(userid); //추가 입력
 		System.out.println("checkid " + Integer.parseInt(checkid));
 		if (Integer.parseInt(checkid) >= 1) {
 			return "FALSE";
