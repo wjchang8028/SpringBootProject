@@ -19,12 +19,12 @@ public class LoginController {
 
 	@RequestMapping("/validationID.do")
 	@ResponseBody
-	public String checkID(String userid) {
+	public String checkID(String userid) throws Exception {
 		System.out.println("입력받은 값 : " + userid);
 
-		String checkid = testtableservice.selectCheckID(userid); //추가 입력
-		System.out.println("checkid " + Integer.parseInt(checkid));
-		if (Integer.parseInt(checkid) >= 1) {
+		int checkid = testtableservice.SelectCheckID(userid); // 추가 입력
+		System.out.println("checkid " + checkid);
+		if (checkid >= 1) {
 			return "FALSE";
 		} else {
 			return "TRUE";
@@ -34,12 +34,12 @@ public class LoginController {
 	@RequestMapping("validationPW.do")
 	@ResponseBody
 	public String checkPW(HttpServletRequest request) {
-		//todo commonutils 가져오기
+		// todo commonutils 가져오기
 		commonUtils utils = new commonUtils();
 
 		HashMap paramMap = new HashMap();
 
-		paramMap = utils.apiInit(request);
+		paramMap = utils.apiInit(request); //commonutils 에 추가
 		System.out.println(paramMap);
 
 		if (paramMap.get("userpw").equals(paramMap.get("checkuserpw"))) {
