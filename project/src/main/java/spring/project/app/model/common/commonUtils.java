@@ -13,6 +13,9 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.Map;
+
+import javax.servlet.http.HttpServletRequest;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
@@ -150,6 +153,13 @@ public class commonUtils {
 		}
 
 		return "";
+	}
+	
+	public HashMap apiInit(HttpServletRequest request) {
+		
+		HashMap map = new HashMap();
+		
+		return map;
 	}
 
 }
