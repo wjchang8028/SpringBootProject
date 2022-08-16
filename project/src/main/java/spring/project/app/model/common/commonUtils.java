@@ -11,6 +11,7 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -158,6 +159,8 @@ public class commonUtils {
 	public HashMap apiInit(HttpServletRequest request) {
 		
 		HashMap map = new HashMap();
+		
+		Enumeration();
 		
 		return map;
 	}
