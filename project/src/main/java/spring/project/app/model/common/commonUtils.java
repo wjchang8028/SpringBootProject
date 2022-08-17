@@ -160,7 +160,7 @@ public class commonUtils {
 		
 		HashMap map = new HashMap();
 		
-		Enumeration();
+		//Enumeration(); 
 		
 		return map;
 	}
