@@ -159,10 +159,13 @@ public class commonUtils {
 	public HashMap apiInit(HttpServletRequest request) {
 		
 		HashMap map = new HashMap();
+	
 		
-		//Enumeration(); 
+		//Enumeration(); //enumeration으로 파라미터 맵형태로 변환
 		
 		return map;
 	}
+	
+	
 
 }
