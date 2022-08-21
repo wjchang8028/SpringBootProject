@@ -162,7 +162,7 @@ public class commonUtils {
 		map.put("test", "test");
 	
 		
-		//Enumeration(); //enumeration으로 파라미터 맵형태로 변환
+		//Enumeration(); //enumeration으로 파라미터 맵형태로 변환 
 		
 		return map;
 	}
