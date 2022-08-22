@@ -157,7 +157,7 @@ public class commonUtils {
 	}
 	
 	public HashMap apiInit(HttpServletRequest request) {
-		
+		//
 		HashMap map = new HashMap();
 		map.put("test", "test");
 	
