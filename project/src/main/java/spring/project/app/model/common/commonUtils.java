@@ -82,7 +82,7 @@ public class commonUtils {
 		try {
 			HttpClient hclient = HttpClientBuilder.create().build(); // HttpClient 생성
 			HttpPost postRequest = new HttpPost(requestURL); // 요청 URL에 post 전송
-			HttpResponse response = hclient.execute(postRequest); 
+			HttpResponse response = hclient.execute(postRequest);
 
 		} catch (Exception e) {
 			// TODO: handle exception
@@ -155,18 +155,41 @@ public class commonUtils {
 
 		return "";
 	}
-	
+
 	public HashMap apiInit(HttpServletRequest request) {
-		//test 주석
-		HashMap map = new HashMap();
-		map.put("test", "test");
-	
-		
-		//Enumeration(); //enumeration으로 파라미터 맵형태로 변환 
-		
-		return map;
-	}
-	
-	
+
+		HashMap<Object, Object> reqMap = new HashMap<>();
+		// HashMap paramMap = new HashMap(request.getParameterMap());
+		//
+		// System.out.println(paramMap.get("userpw"));
+		// Iterator it = paramMap.keySet().iterator();
+		//
+		// String key = null;
+		// String value = null;
+		// String paramName = null;
+		//
+		// while (it.hasNext()) {
+		// key = String.valueOf(it.next());
+		// value = String.valueOf(paramMap.get(key));
+		//
+		// for (int i = 0; i < value.length(); i++) {
+		// System.out.println("key : " + key + " , " + "value : " + value);
+		// }
+		//
+		// }
+
+		String paramName = null;
+
+		Enumeration params = request.getParameterNames();
+		while (params.hasMoreElements()) {
+			paramName = (String) params.nextElement();
+			reqMap.put(paramName, request.getParameter(paramName));
+
+		}
+
+		System.out.println(reqMap);
+		return reqMap;
+
+	};
 
 }
