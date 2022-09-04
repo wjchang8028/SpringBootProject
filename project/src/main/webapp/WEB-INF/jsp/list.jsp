@@ -8,5 +8,7 @@
 </head>
 <body>
 	<h1>hi ${list } list 출력페이지 입니다.</h1>
+	
+	<!-- jstl추가 예정 -->
 </body>
 </html>
