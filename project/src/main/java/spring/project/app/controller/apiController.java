@@ -15,13 +15,12 @@ public class apiController {
 
 		HashMap map = new HashMap();
 		
-		
-		//apiinit 추가
-		
 		return "";
 	}
 	
-	public String apiinit() {
+	public String apiinit(HttpServletRequest request) {
+		
+		request.getParameter(null);
 		
 		return "";
 	}
