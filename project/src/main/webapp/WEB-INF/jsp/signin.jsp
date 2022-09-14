@@ -13,7 +13,7 @@
 		<input type="text" id="id" name="userid">
 		<button type="button" id="btn1">아이디 확인</button>
 		<div id="result"></div>
-		<input type="text" name="userpw">
+		<input type="text" name="userpw" placeholder="pw">
 		
 		
 		<input type="text" name="signData">
