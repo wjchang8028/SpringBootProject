@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
 
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import spring.project.app.model.common.commonUtils;
 import spring.project.app.service.TestTableService;
 
 @Controller
@@ -52,14 +54,15 @@ public class TestTableController {
 
 	@RequestMapping(value = "/signin.do")
 	public String SignInID() {
-		
+
 		return "signinpage";
 	}
 
 	@RequestMapping(value = "/apitest.do") // api컨트롤러 추가
-	public String page() {
-		
-	
+	public String page(HttpServletRequest request) {
+		commonUtils util = new commonUtils();
+		util.apiInit(request);
+
 		return "apitest";
 	}
 
@@ -82,10 +85,10 @@ public class TestTableController {
 		// json array 변환법
 		return "page";
 	}
-	
+
 	@GetMapping
 	public String getView() {
-		//get으로 사이트 매핑 방법 찾기
+		// get으로 사이트 매핑 방법 찾기
 		return "getView";
 	}
 }
