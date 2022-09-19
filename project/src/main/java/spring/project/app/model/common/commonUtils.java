@@ -156,7 +156,7 @@ public class commonUtils {
 		return "";
 	}
 
-	public HashMap apiInit(HttpServletRequest request) {
+	public HashMap apiInit(HttpServletRequest request) { // 파라미터 값 받아서 map으로 변환
 
 		HashMap<Object, Object> reqMap = new HashMap<>();
 		// HashMap paramMap = new HashMap(request.getParameterMap());
