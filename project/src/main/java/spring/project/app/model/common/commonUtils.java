@@ -146,6 +146,7 @@ public class commonUtils {
 
 			} else {
 				System.out.println("response error ! : " + response.getStatusLine().getStatusCode());
+				
 			}
 
 		} catch (IOException e) {
