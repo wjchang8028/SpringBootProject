@@ -23,6 +23,8 @@ public class LoginController {
 		System.out.println("입력받은 값 : " + userid);
 
 		int checkid = testtableservice.SelectCheckID(userid); // 추가 입력
+		
+		//jwt 토큰 인증방식 추가 예정
 		System.out.println("checkid " + checkid);
 		if (checkid >= 1) {
 			return "FALSE";
