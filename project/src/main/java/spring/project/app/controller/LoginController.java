@@ -27,12 +27,13 @@ public class LoginController {
 		//jwt 토큰 인증방식 추가 예정
 		System.out.println("checkid " + checkid);
 		if (checkid >= 1) {
+			
 			return "FALSE";
 		} else {
 			return "TRUE";
 		}
 	}
-
+ 
 	@RequestMapping("validationPW.do")
 	@ResponseBody
 	public String checkPW(HttpServletRequest request) {
