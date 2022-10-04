@@ -66,7 +66,7 @@ public class TestTableController {
 		return "apitest";
 	}
 
-	@RequestMapping
+	@RequestMapping(value="/json.do")
 	public String jsonpage() {
 		JSONParser jparser = new JSONParser();// parser simple
 
