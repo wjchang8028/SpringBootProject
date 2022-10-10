@@ -9,6 +9,16 @@
 <body>
 	<h1>hi ${list } list 출력페이지 입니다.</h1>
 	
+	<table>
+	<th>
+	아이디
+	</th>
+	
+		<tr>
+		아이디
+		</tr>
+	</table>
+	
 	<!-- jstl추가 예정 -->
 </body>
 </html>
