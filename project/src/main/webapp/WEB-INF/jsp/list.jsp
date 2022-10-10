@@ -10,13 +10,13 @@
 	<h1>hi ${list } list 출력페이지 입니다.</h1>
 	
 	<table>
-	<th>
-	아이디
-	</th>
-	
-		<tr>
+		<th>
 		아이디
-		</tr>
+		</th>
+	
+		<td>
+		아이디
+		</td>
 	</table>
 	
 	<!-- jstl추가 예정 -->
