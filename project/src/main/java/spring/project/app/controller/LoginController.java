@@ -34,7 +34,7 @@ public class LoginController {
 		}
 	}
  
-	@RequestMapping("validationPW.do")
+	@RequestMapping("validationPW.do") //패스워드 검증
 	@ResponseBody
 	public String checkPW(HttpServletRequest request) {
 		// todo commonutils 가져오기
