@@ -12,6 +12,7 @@
 	<table>
 		<th>
 		¾ÆÀÌµğ
+		${list }
 		</th>
 	
 		<td>
