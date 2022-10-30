@@ -11,7 +11,7 @@
 	
 	<table>
 		<th>
-		아이디
+		아이디 test
 		${list }
 		</th>
 	
