@@ -4,6 +4,8 @@ import java.util.HashMap;
 
 import javax.servlet.http.HttpServletRequest;
 
+import org.apache.http.client.HttpClient;
+import org.apache.http.impl.client.HttpClientBuilder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -15,8 +17,13 @@ public class apiController {
 
 		HashMap map = new HashMap();
 		
+		HttpClient client = HttpClientBuilder.create().build();
+		
+		
 		return "";
 	}
+	
+	
 	
 	public String apiinit(HttpServletRequest request) {
 		
