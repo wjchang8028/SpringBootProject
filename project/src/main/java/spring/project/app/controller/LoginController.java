@@ -30,7 +30,7 @@ public class LoginController {
 			
 			return "FALSE";
 		} else {
-			return "TRUE";
+			return "TRUE"; //test
 		}
 	}
  
