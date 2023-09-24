@@ -35,6 +35,7 @@ public class TestTableController {
 	public String view(Model model) throws Exception {
 		List<Map<String, Object>> AllList = testtableservice.SelectAllList();
 		System.out.println(AllList);
+		System.out.println("test");
 		model.addAttribute("list", AllList); //유저 리스트
 		return "list";
 	}
